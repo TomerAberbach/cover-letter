@@ -1,0 +1,56 @@
+% Class
+% =====
+\documentclass{article}
+
+% Packages
+% ========
+\usepackage{
+    geometry, % Page Layout
+    setspace, % Single Spacing
+    parskip, % Paragraphs
+    trimspaces, % Trim Spaces
+    enumitem, % Bullet Points
+    fontspec, % Font Commands
+    xifthen, % Conditionals
+    comment % Block Comments
+}
+\usepackage[hidelinks]{hyperref} % Hyperlinks
+
+% Configuration
+% =============
+\input{configuration.tex}
+
+% Commands and Environments
+% =========================
+\input{commands.tex}
+
+% Document
+% ========
+\begin{document}
+    % Load Information
+    \input{information.tex}
+    
+    % Header
+    \header
+    
+    \bigskip\large
+    
+    \begin{singlespace}
+        % Date
+        \today \\\\
+        % Recipient Information
+        \ifthenelse{\NOT\equal{\recipientfirstname\recipientlastname\recipienttitle}{\empty}}{
+            \recipientfirstname\ \recipientlastname \\
+            \recipienttitle \\
+        }{}
+        \company \\
+        \companyaddress \\
+        \companycity, \companystate\ \companyzipcode \\\\
+        Dear \recipientname, \\\\
+        % Letter Body
+        \letter \\\\
+        % Signature
+        Regards, \\
+        \name
+    \end{singlespace}
+\end{document}

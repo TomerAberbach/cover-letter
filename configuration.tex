@@ -1,0 +1,39 @@
+% Layout
+% =====
+% Margin
+\geometry{margin=1.25in}
+
+% No Page Numbering
+\pagenumbering{gobble}
+
+% Fonts
+% =====
+% Load Fonts
+\defaultfontfeatures{
+    Path = fonts/,
+    Extension = .ttf,
+    Ligatures = TeX,
+    UprightFont = *-Regular,
+    ItalicFont = *-Italic,
+    BoldFont = *-Bold,
+    BoldItalicFont = *-BoldItalic
+}
+\setsansfont{Ubuntu}[
+    FontFace = {l}{n}{*-Light},
+    FontFace = {l}{it}{*-LightItalic},
+    FontFace = {sb}{n}{*-Medium},
+    FontFace = {sb}{it}{*-MediumItalic},
+    FontFace = {c}{n}{*-Condensed}
+]
+\setmonofont{UbuntuMono}
+
+% Font Switching Commands
+\DeclareRobustCommand\ltseries{\fontseries{l}\selectfont}
+\DeclareTextFontCommand\textlt{\ltseries}
+\DeclareRobustCommand\sbseries{\fontseries{sb}\selectfont}
+\DeclareTextFontCommand\textsb{\sbseries}
+\DeclareRobustCommand\cdseries{\fontseries{c}\selectfont}
+\DeclareTextFontCommand\textcd{\cdseries}
+
+% Default Font Family: Sans Serif 
+\renewcommand\familydefault\sfdefault
