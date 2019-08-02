@@ -2,6 +2,8 @@
 
 > A LaTeX document for my cover letters.
 
+[See a sample here!](https://github.com/TomerAberbach/cover-letter/blob/master/cover-letter.pdf)
+
 ## Usage
 
 Clone the repository:
