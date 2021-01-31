@@ -2,7 +2,7 @@
 
 > A LaTeX document for my cover letters.
 
-[See a sample here!](https://github.com/TomerAberbach/cover-letter/blob/master/cover-letter.pdf)
+[See a sample here!](https://github.com/TomerAberbach/cover-letter/blob/main/cover-letter.pdf)
 
 ## Installation
 
@@ -31,12 +31,12 @@ If you'd like to edit the cover letter locally, then complete the following step
 
 ## Usage
 
-To edit the cover letter content without affecting the cover letter's layout, edit commands arguments in [`information.tex`](https://github.com/TomerAberbach/cover-letter/blob/master/information.tex).
+To edit the cover letter content without affecting the cover letter's layout, edit commands arguments in [`information.tex`](https://github.com/TomerAberbach/cover-letter/blob/main/information.tex).
 
-To modify the cover letter layout, modify [`main.tex`](https://github.com/TomerAberbach/cover-letter/blob/master/main.tex).
+To modify the cover letter layout, modify [`main.tex`](https://github.com/TomerAberbach/cover-letter/blob/main/main.tex).
 
 If you want to make more substantial changes, then search in [Overleaf's tutorials](https://www.overleaf.com/learn/latex/Tutorials). If you can't figure something out and need some help, then feel free to [file an issue](https://github.com/TomerAberbach/cover-letter/issues/new/choose).
 
 ## License
 
-[MIT](https://github.com/TomerAberbach/cover-letter/blob/master/license) © [Tomer Aberbach](https://github.com/TomerAberbach)
+[MIT](https://github.com/TomerAberbach/cover-letter/blob/main/license) © [Tomer Aberbach](https://github.com/TomerAberbach)
